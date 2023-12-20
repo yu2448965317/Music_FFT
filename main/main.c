@@ -270,7 +270,7 @@ void app_main()
   
   strip_init();
   //xTaskCreatePinnedToCore(i2s_fft_task, "i2s_fft_task", 1024 * 24, NULL, 5, NULL, 0);  
-  initialise_wifi();//test
+  initialise_wifi();
   xTaskCreatePinnedToCore(guiTask, "guiTask", 1024 * 12, NULL, 5, NULL,0) ;
   xTaskCreatePinnedToCore(touch_init, "touch_pad_init", 1024 * 12, NULL, 5, NULL,1) ;
 }
